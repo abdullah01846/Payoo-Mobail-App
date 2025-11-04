@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <!-- daisy ul -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <header>
+      <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+        <nav
+          class="flex justify-around items-center border-b-1 border-gray-400"
+        >
+          <img class="w-16 mb-5" src="./assets/Group.png" alt="" />
+          <div class="">
+            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <p class="border-1 rounded-lg p-1 mb-10">Available Balance</p>
+          </div>
+          <button class="btn mb-5">Loguot</button>
+        </nav>
+
+        <!-- section 2 -->
+        <section class="mt-10">
+          <h1 class="text-3xl font-bold p-2">Welcome to Payooo!</h1>
+          <p class="p-2">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+          <!-- cards -->
+          <div class="cards grid grid-cols-3 mt-7 gap-3 m-3">
+            <!-- box 1 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/wallet1.png" alt="" />
+              <h1>Add Money</h1>
+            </div>
+            <!-- box 2 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/send1.png" alt="" />
+              <h1>Cashout</h1>
+            </div>
+            <!-- box 3 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/money1.png" alt="" />
+              <h1>Transfer</h1>
+            </div>
+            <!-- box 4 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/bonus1.png" alt="" />
+              <h1>Get Bonus</h1>
+            </div>
+            <!-- box 5 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/purse1.png" alt="" />
+              <h1>Pay Bill</h1>
+            </div>
+            <!-- box 6 -->
+            <div class="box border p-2 text-center rounded-lg border-gray-500">
+              <img class="w-9 mx-auto" src="./assets/transaction1.png" alt="" />
+              <h1>Transactions</h1>
+            </div>
+          </div>
+
+          <!-- Add Money section -->
+          <section class="bg-gray-50">
+            <h2 class="font-bold text-xl p-2">Add Money</h2>
+            <!-- Add money login form -->
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-[#FFFFFF] w-full max-w-sm shrink-0"
+                >
+                  <div class="card-body">
+                    <legend class="text-black">Select Bank</legend>
+                    <select class="select appearance-none  bg-gray-50 rounded-full">
+                      <option disabled selected>Select Bank</option>
+                      <option value="Bkash">Bkash</option>
+                      <option value="Nagad">Nagad</option>
+                      <option value="DBBL">DBBL</option>
+                    </select>
+                    <fieldset class="fieldset">
+                      <label class="label text-black">Bank Account Number</label>
+                      <input  type="email" class="input bg-gray-50 rounded-full" placeholder="Enter 11 Digit account number" />
+                      <label class="label text-black">Amount to Add</label>
+                      <input
+                        type="number"
+                        class="input   bg-gray-50 rounded-full"
+                        placeholder="Add Amount to Withdraw"
+                      />
+                      <label class="label text-black">Pin Number</label>
+                      <input
+                        type="number"
+                        class="input  bg-gray-50 rounded-full"
+                        placeholder="Enter 4 digit Pin Number"
+                      />
+                      <div><a class="link link-hover">Forgot password?</a></div>
+                      <button class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-full">Add Money</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </header>
+  </body>
+</html>
